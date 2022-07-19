@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.aarep.enomon",
+  "applicationId": "com.monkeys.test",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "AndroidManifest.xml",
       "properties": {
-        "packageId": "com.aarep.enomon",
+        "packageId": "com.monkeys.test",
         "split": "",
         "minSdkVersion": "22"
       }

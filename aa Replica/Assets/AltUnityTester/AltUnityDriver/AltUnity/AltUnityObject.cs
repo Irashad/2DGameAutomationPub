@@ -44,14 +44,7 @@ namespace Altom.AltUnityDriver
         {
             return new AltUnityFindObject(CommHandler, By.PATH, "//*[@id=" + this.id + "]/..", By.NAME, "", true).Execute();
         }
-        /// <summary>
-        ///AUTHOR  is RASHAD NASIRLI
-        /// </summary>
-        /// <returns></returns>
-        public AltUnityObject getChild()
-        {
-            return new AltUnityFindObject(CommHandler, By.PATH, "//*[@id=" + this.id + "]/*", By.NAME, "", true).Execute();
-        }
+      
         public AltUnityVector2 getScreenPosition()
         {
             return new AltUnityVector2(x, y);
@@ -64,23 +57,7 @@ namespace Altom.AltUnityDriver
         {
             return new AltUnityGetComponentProperty<T>(CommHandler, componentName, propertyName, assemblyName, maxDepth, this).Execute();
         }
-        /// <summary>
-        /// send the component, send the property name, we will provide you with the property value 
-        /// 
-        /// AUTHOR of this method is RASHAD NASIRLi
-        /// I just overload the same method 
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="componentName"></param>
-        /// <param name="propertyName"></param>
-        /// <param name="assemblyName"></param>
-        /// <param name="maxDepth"></param>
-        /// <returns></returns>
-        public T GetComponentProperty<T>(AltUnityComponent component, string propertyName, string assemblyName = null, int maxDepth = 2)
-        {
-            
-            return new AltUnityGetComponentProperty<T>(CommHandler, component.componentName, propertyName, assemblyName, maxDepth, this).Execute();
-        }
+        
         public void SetComponentProperty(string componentName, string propertyName, object value, string assemblyName = null)
         {
             new AltUnitySetComponentProperty(CommHandler, componentName, propertyName, value, assemblyName, this).Execute();
@@ -144,30 +121,7 @@ namespace Altom.AltUnityDriver
         {
             return new AltUnityGetAllComponents(CommHandler, this).Execute();
         }
-        /// <summary>
-        ///  RASHAD NASIRLI
-        /// You should send component name with full name space
-        /// for example the component name is "Animator". full name is "UnityEngine.Animator"
-        /// </summary>
-        /// <param name="altUnityComponent"></param>
-        /// <param name="altUnityPropertiesSelections"></param>
-        /// <returns></returns>
-        /// 
-        public AltUnityComponent GetComponentByFullName(string fullNameOfComponent) 
-        {
-            List<AltUnityComponent> allComponentsOfTheObject = new AltUnityGetAllComponents(CommHandler, this).Execute();
-                for (int i = 0; i < allComponentsOfTheObject.Count; i++)
-                {
-                    if (allComponentsOfTheObject[i].componentName.Equals(fullNameOfComponent))
-                    {
-                     return allComponentsOfTheObject[i];
-                    }
-                }
-
-            return new AltUnityComponent();
-      
-        }
-
+       
 
         public System.Collections.Generic.List<AltUnityProperty> GetAllProperties(AltUnityComponent altUnityComponent, AltUnityPropertiesSelections altUnityPropertiesSelections = AltUnityPropertiesSelections.ALLPROPERTIES)
         {

@@ -3,20 +3,42 @@ using UnityEngine;
 using Altom.AltUnityDriver;
 using NUnit.Framework;
 using UnityEngine.UI;
-
 public class PinItNow
 {
     public static AltUnityDriver Driver;
-    // Start is called before the first frame update
 
+    /// <summary>
+    /// SetUp
+    /// </summary>
     [OneTimeSetUp]
     public void SetUp()
-    {
-        
+    { 
         Driver = new AltUnityDriver();
     }
 
-    // Update is called once per frame
+
+    /// <summary>
+    /// Verify Camera is present in the scene
+    /// </summary>
+    [Test, Order(1)]
+    public void verifyCameraisPresent()
+    {
+        AltUnityObject mycamera = Driver.FindObject(By.NAME,("Main Camera"));
+        Assert.NotNull(mycamera);
+    }
+
+    /// <summary>
+    /// Click Screen
+    /// </summary>
+    [Test, Order(2)]
+    public void clickScreenToShoot()
+    {
+        AltUnityObject shootPin = Driver.FindObject(By.NAME, "PinSpawnPoint").Click();
+    }
+
+    /// <summary>
+    /// Stop 
+    /// </summary>
     [OneTimeTearDown]
     public void bitdi()
     {
@@ -24,26 +46,33 @@ public class PinItNow
     }
 
 
-    [Test, Order(1)]
-    public void VerifyScoreIncreaseWhenPinTouch()
-    {
-        Driver.WaitForCurrentSceneToBe("MainLevel");
-        AltUnityObject PinSpawnObj = Driver.FindObjectByName("PinSpawnPoint"); //PinSpawnpoint Object
-        AltUnityVector2 ballMotherhoodLocation = PinSpawnObj.getScreenPosition();
-        AltUnityObject ScoreObject = Driver.FindObjectByPath( "//Canvas/Score");
-        int currentScore = int.Parse(ScoreObject.GetText()); //Getting text of 
-        Driver.Tap(ballMotherhoodLocation); //tapping pin spawn point to shoot
-        int afterTapScore =int.Parse(Driver.WaitForObjectByPath("//Canvas/Score[@text=" + (currentScore + 1).ToString() + "]").GetText());
-        Assert.AreEqual(currentScore+1, afterTapScore);
-    }
 
-    [Test, Order(2)]
-    public void verifyCameraisPresent()
-    {
-        AltUnityObject mycamera = Driver.FindObjectByName("Main Camera");
-        Assert.NotNull(mycamera);
-    }
 
+
+
+
+
+
+
+
+
+
+
+    /*   [Test, Order(1)]
+   public void VerifyScoreIncreaseWhenPinTouch()
+   {
+       Driver.WaitForCurrentSceneToBe("MainLevel");
+       AltUnityObject PinSpawnObj = Driver.FindObjectByName("PinSpawnPoint"); //PinSpawnpoint Object
+       AltUnityVector2 ballMotherhoodLocation = PinSpawnObj.getScreenPosition();
+       AltUnityObject ScoreObject = Driver.FindObjectByPath( "//Canvas/Score");
+       int currentScore = int.Parse(ScoreObject.GetText()); //Getting text of 
+       Driver.Tap(ballMotherhoodLocation); //tapping pin spawn point to shoot
+       int afterTapScore =int.Parse(Driver.WaitForObjectByPath("//Canvas/Score[@text=" + (currentScore + 1).ToString() + "]").GetText());
+       Assert.AreEqual(currentScore+1, afterTapScore);
+   }
+*/
+
+    /*
     [Test,Order(3)]
     public void verifyPinStickedToRotator()
     {
@@ -79,32 +108,32 @@ public class PinItNow
         AltUnityObject rotatorObj = Driver.FindObjectByComponent("Rotator");
         AltUnityComponent anime =   rotatorObj.GetComponentByFullName("UnitykEngine.Anlimator");
         Debug.LogWarning("FULL COMPONENT NAME ISHOYOYOYO: " + anime.componentName);
-        
-      
+
+
     }
 
     [Test,Order(6)]
     public void verifySlideObjectValueisZeroOnGameBeginning()
     {
-        
-        
+
+
         AltUnityObject sliderObj = Driver.FindObjectByName("Slider");
         AltUnityComponent sliderComponent = sliderObj.GetComponentByFullName("UnityEngine.UI.Slider");
         var a = sliderObj.GetComponentProperty<float>(sliderComponent, "value");
         // var a = sliderObj.GetComponentProperty<float>("UnityEngine.UI.Slider", "value");
-        
+
 
         //property names
-        /*for (int i = 0; i < sliderObj.GetAllProperties(sliderComponent).Count; i++)
+        *//*for (int i = 0; i < sliderObj.GetAllProperties(sliderComponent).Count; i++)
         {
             Debug.LogWarning("YOUR COMPONENT PROPERTIES IS | "+sliderObj.GetAllProperties(sliderComponent)[i].name);
-        }*/
+        }*//*
         //component names
-        /*List<AltUnityComponent> slideComponents =  sliderObj.GetAllComponents();
+        *//*List<AltUnityComponent> slideComponents =  sliderObj.GetAllComponents();
         for (int i = 0; i < slideComponents.Count; i++)
         {
            Debug.LogWarning("YOUR SLIDE gamobject components NAME IS: "+slideComponents[i].componentName);
-        }*/
+        }*//*
     }
 
     [Test,Order(6)]
@@ -130,7 +159,6 @@ public class PinItNow
         Driver.GetPNGScreenshot("C:/Users/resha/Documents/GitHub/aa-Replica/aa Replica/Assets/AltUnityTester/Editor/Tests/canm.png");
         //Driver.GetPNGScreenshot("/hello.png");
 
-    }
+    }*/
 
-    
 }

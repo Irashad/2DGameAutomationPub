@@ -120,95 +120,7 @@ namespace Altom.AltUnityDriver
         {
             return new AltUnityFindObject(communicationHandler, by, value, cameraBy, cameraValue, enabled).Execute();
         }
-        /// <summary>
-        /// AUTHOR | Rashad Nasirli
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <returns></returns>
-        public AltUnityObject FindObjectByName(string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
-        {
-            return new AltUnityFindObject(communicationHandler, By.NAME, value, cameraBy, cameraValue, enabled).Execute();
-        }
-        /// <summary>
-        /// AUTHOR | RASHAD NASIRLI
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <returns></returns>
-        public AltUnityObject FindObjectByPath(string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
-        {
-            return new AltUnityFindObject(communicationHandler, By.PATH, value, cameraBy, cameraValue, enabled).Execute();
-        }
-        /// <summary>
-        /// AUTHOR | RASHAD NASIRLI
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <returns></returns>
-        public AltUnityObject FindObjectByText(string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
-        {
-            return new AltUnityFindObject(communicationHandler, By.TEXT, value, cameraBy, cameraValue, enabled).Execute();
-        }
-
-        /// <summary>
-        /// AUTHOR | RASHAD NASIRLI
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <returns></returns>
-        public AltUnityObject FindObjectById(string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
-        {
-            return new AltUnityFindObject(communicationHandler, By.ID, value, cameraBy, cameraValue, enabled).Execute();
-        }
-
-        /// <summary>
-        /// AUTHOR | RASHAD NASIRLI
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <returns></returns>
-        public AltUnityObject FindObjectByLayer(string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
-        {
-            return new AltUnityFindObject(communicationHandler, By.LAYER, value, cameraBy, cameraValue, enabled).Execute();
-        }
-
-        /// <summary>
-        /// AUTHOR | RASHAD NASIRLI
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <returns></returns>
-        public AltUnityObject FindObjectByTag(string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
-        {
-           return new AltUnityFindObject(communicationHandler, By.TAG, value, cameraBy, cameraValue, enabled).Execute();
-        }
-
-        /// <summary>
-        /// AUTHOR | RASHAD NASIRLI
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <returns></returns>
-        public AltUnityObject FindObjectByComponent(string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
-        {
-            return new AltUnityFindObject(communicationHandler, By.COMPONENT, value, cameraBy, cameraValue, enabled).Execute();
-        }
-
+      
         public AltUnityObject FindObjectWhichContains(By by, string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true)
         {
             return new AltUnityFindObjectWhichContains(communicationHandler, by, value, cameraBy, cameraValue, enabled).Execute();
@@ -398,55 +310,7 @@ namespace Altom.AltUnityDriver
         {
             return new AltUnityWaitForObject(communicationHandler, by, value, cameraBy, cameraValue, enabled, timeout, interval).Execute();
         }
-        /// <summary>
-        /// AUTHOR | RASHAD NASIRLI HELE BITMEYIB
-        /// Demeli obyektin adini goturur. ve onun altinda child obyektlerin emele gelmesini gozleyir
-        /// 
-        /// </summary>
-        /// <param name="by"></param>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <param name="timeout"></param>
-        /// <param name="interval"></param>
-        /// <returns></returns>
-        public AltUnityObject WaitForObjectToHaveChildrenByName( string parentObjectName, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true, double timeout = 20, double interval = 0.5)
-        {
-            return new AltUnityWaitForObject(communicationHandler,By.PATH, "//*[@name=" + parentObjectName + "]/*", cameraBy, cameraValue, enabled, timeout, interval).Execute();
-        }
-
-        /// <summary>
-        /// Author | RASHAD NASIRLI
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <param name="timeout"></param>
-        /// <param name="interval"></param>
-        /// <returns></returns>
-        public AltUnityObject WaitForObjectByPath(string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true, double timeout = 20, double interval = 0.5)
-        {
-            
-            return new AltUnityWaitForObject(communicationHandler, By.PATH, value, cameraBy, cameraValue, enabled, timeout, interval).Execute();
-        }
-        /// <summary>
-        /// Author | RASHAD NASIRLI
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="cameraBy"></param>
-        /// <param name="cameraValue"></param>
-        /// <param name="enabled"></param>
-        /// <param name="timeout"></param>
-        /// <param name="interval"></param>
-        /// <returns></returns>
-        public AltUnityObject WaitForObjectByName(string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true, double timeout = 20, double interval = 0.5)
-        {
-
-            return new AltUnityWaitForObject(communicationHandler, By.NAME, value, cameraBy, cameraValue, enabled, timeout, interval).Execute();
-        }
-
+      
         public void WaitForObjectNotBePresent(By by, string value, By cameraBy = By.NAME, string cameraValue = "", bool enabled = true, double timeout = 20, double interval = 0.5)
         {
             new AltUnityWaitForObjectNotBePresent(communicationHandler, by, value, cameraBy, cameraValue, enabled, timeout, interval).Execute();

@@ -63,8 +63,8 @@
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityContractResolver.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Notifications\NotificationType.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\ObjectCommands\AltUnityGetAllMethods.cs" />
-    <Compile Include="Assets\AltUnityTester\AltUnityDriver\Logging\AltUnityLogger.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityReflectionMethodsCommand.cs" />
+    <Compile Include="Assets\AltUnityTester\AltUnityDriver\Logging\AltUnityLogger.cs" />
     <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\InputBuffer.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\InputActions\AltUnityKeyDown.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\UnityCommands\AltUnityDeleteKeyPlayerPref.cs" />
@@ -77,10 +77,8 @@
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityMultipointSwipeCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityTapCoordinatesCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\ICommandHandler.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\UnityCommands\AltUnityGetIntKeyPLayerPref.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\UI\AltUnityInputMark.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\UnityCommands\AltUnityWaitForCurrentSceneToBe.cs" />
     <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\HuffmanTree.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityBaseScreenshotCommand.cs" />
@@ -120,11 +118,13 @@
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Logging\ServerLogManager.cs" />
     <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\SR.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\InputActions\AltUnityScroll.cs" />
+    <Compile Include="Assets\Levels\Level2\Finger.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\ObjectCommands\AltUnityGetAllProperties.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Notifications\AltUnityLogNotificationResultParams.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\AltUnityId.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPressKeyboardKeyCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Notifications\AltUnityLoadSceneMode.cs" />
+    <Compile Include="Assets\Levels\Level3\WhenSlideFull.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityInvalidCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnitySetTimeScaleCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\WebSocketServerCommunication.cs" />
@@ -143,7 +143,6 @@
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\ObjectCommands\AltUnityPointerUpFromObject.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetAllScenesCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\AltUnityPortForwarding.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\CopyEncoder.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\InputActions\AltUnityEndTouch.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\AltUnityWebSocketClient.cs" />
@@ -163,14 +162,12 @@
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityDeactivateNotificationCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\InputActions\AltUnityMoveMouse.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\FindObjects\AltUnityBaseFindObjects.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityGetScreenshotCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\FindObjects\AltUnityWaitForObjectWhichContains.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\AltUnity\AltUnityType.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnitySetServerLoggingCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\ObjectCommands\AltUnityDragObject.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityGetAllFieldsCommand.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityBaseClassFindObjectsCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\WebSocketWebGlCommunication.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\ObjectCommands\AltUnityPointerExitObject.cs" />
@@ -203,7 +200,6 @@
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityBeginTouchCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\UnityCommands\AltUnityGetTimeScale.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\UnityCommands\AltUnitySetKeyPLayerPref.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\ObjectCommands\AltUnitySetComponentProperty.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\IWebSocketClient.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\AltUnity\AltUnityProperty.cs" />
@@ -239,13 +235,13 @@
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\ObjectCommands\AltUnityTapElement.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\AltUnityGetAllCamerasCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Input.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityNotification\AltUnityUnloadSceneNotification.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\AltUnity\AltUnityComponent.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityGetAllLoadedScenesCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\UnityCommands\AltUnityGetFloatKeyPlayerPref.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\AltUnity\AltUnityFieldsSelections.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityGetTimeScaleCommand.cs" />
+    <Compile Include="Assets\Levels\Level2\Gravity.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommandWithWait.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityDeletePlayerPrefCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Notifications\BaseNotificationCallBacks.cs" />
@@ -266,6 +262,7 @@
     <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\BlockType.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCommands\AltUnityGetServerVersionCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\InputActions\AltUnityTilt.cs" />
+    <Compile Include="Assets\Levels\Level4\move.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityPointerExitObjectCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnitySetKeyPlayerPrefCommand.cs" />
     <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\FastEncoderWindow.cs" />
@@ -281,14 +278,15 @@
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Communication\ICommunication.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityGetKeyPlayerPrefCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\Screenshot\AltUnityGetScreenshotPNGCommand.cs" />
-    <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\Match.cs" />
     <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\Crc32Helper.cs" />
+    <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\Match.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\AltUnityGetStaticProperty.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AltUnityTester\3rdParty\websocket-sharp\netstandard2.0\websocket-sharp.dll" />
     <None Include="Assets\AltUnityTester\3rdParty\websocket-sharp\netstandard2.0\websocket-sharp.xml" />
     <None Include="Assets\AltUnityTester\ReadMe.txt" />
+    <None Include="Assets\Levels\Level2\testcase.txt" />
     <None Include="Assets\AltUnityTester\3rdParty\nlog.4.7.9\lib\netstandard2.0\NLog.dll" />
     <None Include="Assets\AltUnityTester\Shader\OutlineShader.shader" />
     <None Include="Assets\AltUnityTester\3rdParty\nlog.4.7.9\[Content_Types].xml" />
@@ -534,9 +532,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="clipper_library">
-      <HintPath>Library\PackageCache\com.unity.cinemachine@2.8.6\Runtime\ThirdParty\clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>Assets\AltUnityTester\3rdParty\websocket-sharp\netstandard2.0\websocket-sharp.dll</HintPath>
@@ -949,11 +944,14 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
@@ -964,14 +962,11 @@
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>

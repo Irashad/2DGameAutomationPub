@@ -1,0 +1,5 @@
+Our test case
+1. click on the box 
+2. Verify Box has rigidbody component
+3. verify box has Sprite renderer component
+3. Verify Box has gravity scripts assigned

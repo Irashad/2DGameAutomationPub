@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.aarep.enomon",
+  "applicationId": "com.monkeys.test",
   "variantName": "release",
   "elements": [
     {

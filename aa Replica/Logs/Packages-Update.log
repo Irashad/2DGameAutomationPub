@@ -1,5 +1,5 @@
 
-=== Thu May 26 17:05:53 2022
+=== Thu Jul 14 17:48:05 2022
 
 Packages were changed.
 Update Mode: resetToDefaultDependencies
@@ -46,10 +46,12 @@ The following packages were added:
   com.unity.ugui@1.0.0
   com.unity.visualscripting@1.7.6
 
-=== Thu May 26 17:32:25 2022
+=== Thu Jul 14 17:59:58 2022
 
 Packages were changed.
 Update Mode: mergeDefaultDependencies
 
 The following packages were added:
-  com.unity.ext.nunit@1.0.6
+  com.unity.editorcoroutines@1.0.0
+  com.unity.inputsystem@1.0.2
+  com.unity.nuget.newtonsoft-json@3.0.2

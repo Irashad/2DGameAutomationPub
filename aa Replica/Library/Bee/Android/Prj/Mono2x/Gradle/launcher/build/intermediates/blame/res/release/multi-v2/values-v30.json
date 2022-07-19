@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\resha\\Documents\\GitHub\\aa-Replica\\aa Replica\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v30\\values-v30.xml",
+            "outputFile": "C:\\Users\\resha\\Desktop\\QATestlabGame\\2DGame\\2DGameAutomation\\aa Replica\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v30\\values-v30.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\resha\\Documents\\GitHub\\aa-Replica\\aa Replica\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values-v30\\values-v30.xml",
+                    "source": "C:\\Users\\resha\\Desktop\\QATestlabGame\\2DGame\\2DGameAutomation\\aa Replica\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values-v30\\values-v30.xml",
                     "from": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
