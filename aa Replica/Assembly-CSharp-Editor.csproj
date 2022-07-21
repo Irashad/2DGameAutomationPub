@@ -59,6 +59,7 @@
     <Compile Include="Assets\AltUnityTester\Editor\AltUnityInspectorPage.cs" />
     <Compile Include="Assets\AltUnityTester\Editor\AltUnityBuilder.cs" />
     <Compile Include="Assets\AltUnityTester\Editor\AltUnityPlatform.cs" />
+    <Compile Include="Assets\AltUnityTester\Editor\Tests\Level1Tests\LevelOneTest.cs" />
     <Compile Include="Assets\AltUnityTester\Editor\Tests\PinItNow.cs" />
     <Compile Include="Assets\AltUnityTester\Editor\Logging\EditorLogManager.cs" />
     <Compile Include="Assets\AltUnityTester\Editor\Tests\HelperRashad\Components.cs" />

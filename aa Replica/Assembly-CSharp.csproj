@@ -59,6 +59,7 @@
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\DriverCommunicationWebSocket.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityLoadSceneCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\FindObjects\AltUnityFindObjectsWhichContain.cs" />
+    <Compile Include="Assets\Levels\Level5\WhenColl.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\Parameters\CommandParams.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\ObjectCommands\AltUnityContractResolver.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Notifications\NotificationType.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\ObjectCommands\AltUnityObjectAction.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\InputActions\AltUnityTapElementCommand.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\FindObject\PathSelector.cs" />
+    <Compile Include="Assets\Levels\Level4\WhenCollide.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityDriver\Commands\InputActions\AltUnityKeyUp.cs" />
     <Compile Include="Assets\AltUnityTester\AltUnityServer\Commands\UnityCommands\AltUnityUnloadSceneCommand.cs" />
     <Compile Include="Assets\AltUnityTester\3rdParty\Unity.IO.Compression\GZipUtils.cs" />

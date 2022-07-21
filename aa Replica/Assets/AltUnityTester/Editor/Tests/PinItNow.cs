@@ -5,8 +5,8 @@ using NUnit.Framework;
 using UnityEngine.UI;
 public class PinItNow
 {
-    public static AltUnityDriver Driver;
-
+   // public static AltUnityDriver Driver;
+/*
     /// <summary>
     /// SetUp
     /// </summary>
@@ -44,7 +44,7 @@ public class PinItNow
     {
         Driver.Stop();
     }
-
+*/
 
 
 

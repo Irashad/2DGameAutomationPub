@@ -569,6 +569,8 @@
 "Assets/Levels/Level2/Gravity.cs"
 "Assets/Levels/Level3/WhenSlideFull.cs"
 "Assets/Levels/Level4/move.cs"
+"Assets/Levels/Level4/WhenCollide.cs"
+"Assets/Levels/Level5/WhenColl.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Pin.cs"
 "Assets/Scripts/Rotator.cs"

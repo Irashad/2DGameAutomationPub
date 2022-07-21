@@ -455,6 +455,7 @@
 "Assets/AltUnityTester/Editor/AltUnityTestRunner.cs"
 "Assets/AltUnityTester/Editor/Logging/EditorLogManager.cs"
 "Assets/AltUnityTester/Editor/Tests/HelperRashad/Components.cs"
+"Assets/AltUnityTester/Editor/Tests/Level1Tests/LevelOneTest.cs"
 "Assets/AltUnityTester/Editor/Tests/mydata.cs"
 "Assets/AltUnityTester/Editor/Tests/PinItNow.cs"
 -langversion:9.0

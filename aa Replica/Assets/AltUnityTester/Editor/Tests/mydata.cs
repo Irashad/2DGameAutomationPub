@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.AltUnityTester.Editor.Tests
 {
-    class mydata
+   /* class mydata
     {
         public float x;
         public float y;
@@ -14,5 +14,5 @@ namespace Assets.AltUnityTester.Editor.Tests
         public float magnitude;
         public float sqrMagnitude;
         
-    }
+    }*/
 }

@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	private bool gameHasEnded = false;
+
+	public bool gameHasEnded = false;
 
 	public Rotator rotator;
 	public Spawner spawner;
