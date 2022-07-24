@@ -20,7 +20,7 @@ public class Score : MonoBehaviour {
 		text.text = PinCount.ToString();
 		if(text.text =="1")
         {
-			SceneManager.LoadScene("Level2");
+			//SceneManager.LoadScene("Level2");
         }
 	}
 

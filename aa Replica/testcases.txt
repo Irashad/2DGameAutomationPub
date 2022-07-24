@@ -1,4 +1,4 @@
-Level 1 tests end to end test cases---------------------
+Level 1 tests end to end test cases---------------------------------------------------------------------------------
 test case 1. 
 1. click on anywhere on screen.
 2. assert that clone of spawn object has been created
@@ -12,8 +12,6 @@ test case 3.
 2. assert that score is increasing everytime when spawned object becomes under the child of rotator object.
 
 
-
-
 test case 4. 
 1. assert that animator controller has been attached to main camera (we are testing the animation)
 
@@ -21,26 +19,19 @@ test case 5
 2. click on screen several times you will same game fails. 
 3. assert that main camera object -> game manager component's game ended value setted to true when your game fails (wait until that checkbox setted to true) 
 
-test case 6
-1. verify level cchanges when score inscease
 
 
-
-Level 2
+Level 2-----------------------------------------------------------------------------------------------------------------------------------
 test case 1
 1. Click on blue box
 2. Assert that property of that box setted to Kinematic to Dynamic.
 
 test case 2.
 1. Click on yellow box
-2. Assert that blue box property of rigidbody will not change from dynamic to kinematic
-
-test case 3.
-1. repeat steps from test case 1
-2. assert that level3 has been loaded (wait method) 
+2. Assert that blue box property of rigidbody will not change from kinematic  to dynamic
 
 
-Level 3
+Level 3-------------------------------------------------------------------------------------------------------------
 test case 1. 
 1. scroll slidebar until end 
 2. asssert that it's value becomes 100 (check it from its components) 
@@ -52,14 +43,14 @@ test case 2.
 test case 3. 
 1. assert slidebar has "When Slide Full" component
 
-Level 4.
+Level 4.-------------------------------------------------------------------------------------------------------------
 test case 1.
 1. clik up button
 2. assert that wehn your box collide with another "crash" is set to true on your player box oject When collide script
 
 test case 2. 
-1. click left button
-2. assert that your beginning position Y and current position Y has changed when you click left button
+1. click up button
+2. assert that your beginning position y and current position y has changed when you click left button
 
 test case 3. 
 1. assert both box has collider component
@@ -67,35 +58,33 @@ test case 3.
 3. assert main camera is exist
 
 
-test case 4.
-1. cick up button 
-2. assert that when your box collide with another new levels loaded
+
 
 
 Level 5 tests end to end test cases----------
 
-test case 1. 
+test case 1.  DONE
 assert all below components are attached to the player game object:
 RigidBody
 Box Collider
 When Coll Script
 
-test case2 
+test case2  DONE
 1. Click up botton (green button)
 2. wait for box to go and touch above button.
 3. when touch assert that score is 100
 
-test case3 
+test case3 DONE
 1. Click up botton (green button)
 2. wait for box to go and touch above button.
 3. when touch assert that object is touched
 
-test case4
+test case4 DONE
 1. repeat steps in test case2
 2. assert the box that you hit becomes non active
 
 
-test case5
+test case5 Done 
 1. click ui left button assert a component that attached "left" to it has set  to true
 2. click ui right button assert a component that attached "right" to it has set to true
 3. click ui up button assert a component that attached "up" to it has set to true
@@ -103,7 +92,6 @@ test case5
 
 
 
-for example if someone done a ticket , and it works perfectly,
 
 
 
